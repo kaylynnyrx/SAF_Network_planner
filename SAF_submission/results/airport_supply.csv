@@ -1,0 +1,5 @@
+airport,demand_kt,delivered_kt,supplied_by
+PNK,300.0,300.0,"R3, R4"
+PKN,300.0,300.0,"R4, R6"
+BPN,300.0,300.0,"R2, R5"
+TRK,300.0,300.0,"R1, R3, R5"

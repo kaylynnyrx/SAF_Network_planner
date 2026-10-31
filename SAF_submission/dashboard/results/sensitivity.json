@@ -1,0 +1,29 @@
+[
+ {
+  "road factor": 1.3,
+  "annual cost $M": 896.0,
+  "transport $M/yr": 72.7,
+  "depots": 23,
+  "refineries": "6L",
+  "max refinery shift km": 0,
+  "checks": "10/10"
+ },
+ {
+  "road factor": 1.5,
+  "annual cost $M": 908.4,
+  "transport $M/yr": 85.2,
+  "depots": 24,
+  "refineries": "6L",
+  "max refinery shift km": 49,
+  "checks": "10/10"
+ },
+ {
+  "road factor": 1.7,
+  "annual cost $M": 919.2,
+  "transport $M/yr": 95.6,
+  "depots": 25,
+  "refineries": "6L",
+  "max refinery shift km": 50,
+  "checks": "10/10"
+ }
+]

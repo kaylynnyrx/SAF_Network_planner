@@ -1,0 +1,4 @@
+leg,cargo,tonnes_kt,avg_km,small_truck_t,trips_small_per_yr,large_truck_t,trips_large_per_yr,trips_large_per_day,co2e_kt_per_yr
+Farm → depot,biomass,6000,41,3,2000024,9,666703,1827,60.0
+Depot → refinery,pre-processed biomass,6000,20,18,333343,30,200003,548,18.7
+Refinery → airport,SAF,1200,352,16,75004,32,37505,103,65.6

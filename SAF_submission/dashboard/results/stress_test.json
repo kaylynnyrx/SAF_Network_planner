@@ -1,0 +1,139 @@
+[
+ {
+  "test": "refinery",
+  "what": "R1",
+  "extra_operating_cost_musd_per_yr": -25.7,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "refinery",
+  "what": "R2",
+  "extra_operating_cost_musd_per_yr": -42.4,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "refinery",
+  "what": "R3",
+  "extra_operating_cost_musd_per_yr": -8.7,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "refinery",
+  "what": "R4",
+  "extra_operating_cost_musd_per_yr": -8.0,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "refinery",
+  "what": "R5",
+  "extra_operating_cost_musd_per_yr": -31.0,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "refinery",
+  "what": "R6",
+  "extra_operating_cost_musd_per_yr": -23.5,
+  "saf_short_kt": {
+   "TRK": 113.0
+  },
+  "import_cost_musd_per_yr": 339.0,
+  "total_short_kt": 113.0
+ },
+ {
+  "test": "district flood",
+  "what": "Bulungan",
+  "extra_operating_cost_musd_per_yr": -0.2,
+  "saf_short_kt": {},
+  "import_cost_musd_per_yr": 0.0,
+  "total_short_kt": 0.0
+ },
+ {
+  "test": "district flood",
+  "what": "Ketapang",
+  "extra_operating_cost_musd_per_yr": -95.2,
+  "saf_short_kt": {
+   "PNK": 3.5,
+   "TRK": 236.7
+  },
+  "import_cost_musd_per_yr": 720.5,
+  "total_short_kt": 240.2
+ },
+ {
+  "test": "district flood",
+  "what": "Kotawaringin Barat",
+  "extra_operating_cost_musd_per_yr": -8.1,
+  "saf_short_kt": {
+   "TRK": 56.4
+  },
+  "import_cost_musd_per_yr": 169.3,
+  "total_short_kt": 56.4
+ },
+ {
+  "test": "district flood",
+  "what": "Kotawaringin Timur",
+  "extra_operating_cost_musd_per_yr": -5.4,
+  "saf_short_kt": {
+   "TRK": 67.1
+  },
+  "import_cost_musd_per_yr": 201.3,
+  "total_short_kt": 67.1
+ },
+ {
+  "test": "district flood",
+  "what": "Kutai Kartanegara",
+  "extra_operating_cost_musd_per_yr": -1.8,
+  "saf_short_kt": {
+   "TRK": 103.8
+  },
+  "import_cost_musd_per_yr": 311.5,
+  "total_short_kt": 103.8
+ },
+ {
+  "test": "district flood",
+  "what": "Paser",
+  "extra_operating_cost_musd_per_yr": 25.4,
+  "saf_short_kt": {
+   "TRK": 17.9
+  },
+  "import_cost_musd_per_yr": 53.8,
+  "total_short_kt": 17.9
+ },
+ {
+  "test": "district flood",
+  "what": "Sanggau",
+  "extra_operating_cost_musd_per_yr": -26.6,
+  "saf_short_kt": {
+   "TRK": 106.4
+  },
+  "import_cost_musd_per_yr": 319.1,
+  "total_short_kt": 106.4
+ },
+ {
+  "test": "district flood",
+  "what": "Tanah Laut",
+  "extra_operating_cost_musd_per_yr": 7.1,
+  "saf_short_kt": {},
+  "import_cost_musd_per_yr": 0.0,
+  "total_short_kt": 0.0
+ }
+]

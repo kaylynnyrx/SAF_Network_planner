@@ -1,0 +1,6 @@
+component,usd_per_yr
+annualised CapEx (CapEx/20),234450000
+fixed OpEx (5% CapEx),234450000
+variable OpEx,354235670
+transport,72717361
+TOTAL,895853031

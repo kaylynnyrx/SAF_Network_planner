@@ -1,0 +1,38 @@
+[
+ {
+  "leg": "Farm \u2192 depot",
+  "cargo": "biomass",
+  "tonnes_kt": 6000,
+  "avg_km": 41,
+  "small_truck_t": 3,
+  "trips_small_per_yr": 2000024,
+  "large_truck_t": 9,
+  "trips_large_per_yr": 666703,
+  "trips_large_per_day": 1827,
+  "co2e_kt_per_yr": 60.0
+ },
+ {
+  "leg": "Depot \u2192 refinery",
+  "cargo": "pre-processed biomass",
+  "tonnes_kt": 6000,
+  "avg_km": 20,
+  "small_truck_t": 18,
+  "trips_small_per_yr": 333343,
+  "large_truck_t": 30,
+  "trips_large_per_yr": 200003,
+  "trips_large_per_day": 548,
+  "co2e_kt_per_yr": 18.7
+ },
+ {
+  "leg": "Refinery \u2192 airport",
+  "cargo": "SAF",
+  "tonnes_kt": 1200,
+  "avg_km": 352,
+  "small_truck_t": 16,
+  "trips_small_per_yr": 75004,
+  "large_truck_t": 32,
+  "trips_large_per_yr": 37505,
+  "trips_large_per_day": 103,
+  "co2e_kt_per_yr": 65.6
+ }
+]

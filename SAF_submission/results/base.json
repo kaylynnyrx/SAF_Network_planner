@@ -1,0 +1,1913 @@
+{
+ "scenario": {
+  "name": "base"
+ },
+ "solver_status": "Optimal",
+ "assumptions": {
+  "saf_yield": 0.2,
+  "road_factor": 1.3,
+  "years": 20,
+  "airport_demand_t": {
+   "PNK": 300000,
+   "PKN": 300000,
+   "BPN": 300000,
+   "TRK": 300000
+  },
+  "total_saf_demand_t": null,
+  "airport_weight": {
+   "BPN": 7.0,
+   "PNK": 4.0,
+   "TRK": 1.0,
+   "PKN": 0.65
+  },
+  "refinery_capacity_basis": "feedstock_in",
+  "depot_mass_yield": 1.0,
+  "max_farm_depot_km": 150.0,
+  "max_farm_depot_km_disrupted": 300,
+  "emission_factors": {
+   "farm_depot": 0.242,
+   "depot_refinery": 0.1586,
+   "refinery_airport": 0.1586,
+   "barge": 0.01
+  },
+  "barge_km_to_TRK": 30.0,
+  "carbon_price_usd_per_t": 100.0,
+  "import_cost_per_t_saf": 3000,
+  "n_refinery_candidates": 15
+ },
+ "network": {
+  "solver_status": "Optimal",
+  "depots": [
+   {
+    "id": "D01",
+    "lat": -1.9011301889127212,
+    "lon": 110.03730504585991,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.0515,
+    "start_lon": 109.9553
+   },
+   {
+    "id": "D02",
+    "lat": -1.898370594412511,
+    "lon": 110.01775410647909,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -1.847,
+    "start_lon": 110.0258
+   },
+   {
+    "id": "D03",
+    "lat": 0.2887300047111841,
+    "lon": 110.73507231653286,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": 0.2911,
+    "start_lon": 110.6932
+   },
+   {
+    "id": "D04",
+    "lat": -0.3210786110797062,
+    "lon": 116.8748040287883,
+    "size": "S",
+    "cap_t": 150000,
+    "capex": 2250000.0,
+    "start_lat": -0.3066,
+    "start_lon": 116.8705
+   },
+   {
+    "id": "D05",
+    "lat": -2.0130865852021778,
+    "lon": 110.81517701771861,
+    "size": "S",
+    "cap_t": 150000,
+    "capex": 2250000.0,
+    "start_lat": -1.682,
+    "start_lon": 110.4027
+   },
+   {
+    "id": "D06",
+    "lat": -0.36704821820291167,
+    "lon": 116.82991632556465,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -0.3747,
+    "start_lon": 116.804
+   },
+   {
+    "id": "D07",
+    "lat": -2.200603232110931,
+    "lon": 115.76067939225915,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.1934,
+    "start_lon": 115.7592
+   },
+   {
+    "id": "D08",
+    "lat": 0.31478540708464003,
+    "lon": 110.81863878758988,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": 0.3297,
+    "start_lon": 110.817
+   },
+   {
+    "id": "D09",
+    "lat": -0.3459879697026633,
+    "lon": 116.97403085811658,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -0.3435,
+    "start_lon": 117.0175
+   },
+   {
+    "id": "D10",
+    "lat": -0.3617165306949835,
+    "lon": 116.89303013681159,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -0.3668,
+    "start_lon": 116.8975
+   },
+   {
+    "id": "D11",
+    "lat": -2.1139071728093493,
+    "lon": 113.0486029130738,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.0425,
+    "start_lon": 113.0427
+   },
+   {
+    "id": "D12",
+    "lat": 0.26942453038533887,
+    "lon": 110.75397256492673,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": 0.2625,
+    "start_lon": 110.7212
+   },
+   {
+    "id": "D13",
+    "lat": -2.3972744672671595,
+    "lon": 113.07593995245644,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.4623,
+    "start_lon": 113.0832
+   },
+   {
+    "id": "D14",
+    "lat": -2.6809994176540117,
+    "lon": 111.61593022113357,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.6715,
+    "start_lon": 111.589
+   },
+   {
+    "id": "D15",
+    "lat": -1.9578563372372546,
+    "lon": 110.10327414872432,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -1.9542,
+    "start_lon": 110.0706
+   },
+   {
+    "id": "D16",
+    "lat": -2.2285492712239043,
+    "lon": 115.7664169983288,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.2348,
+    "start_lon": 115.7677
+   },
+   {
+    "id": "D17",
+    "lat": -1.8671776285775468,
+    "lon": 109.96020789980824,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -1.8634,
+    "start_lon": 109.8828
+   },
+   {
+    "id": "D18",
+    "lat": -3.1267730555431106,
+    "lon": 115.13920581092142,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -3.5655,
+    "start_lon": 114.8385
+   },
+   {
+    "id": "D19",
+    "lat": -2.5918987420863857,
+    "lon": 111.69254364261074,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.5395,
+    "start_lon": 111.7025
+   },
+   {
+    "id": "D20",
+    "lat": -2.6812021581747816,
+    "lon": 111.6935566727752,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.6718,
+    "start_lon": 111.704
+   },
+   {
+    "id": "D21",
+    "lat": -2.3629169625081445,
+    "lon": 112.9872441141577,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.4114,
+    "start_lon": 112.9518
+   },
+   {
+    "id": "D22",
+    "lat": -2.2869787451360413,
+    "lon": 113.03267195883825,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": -2.2989,
+    "start_lon": 113.0191
+   },
+   {
+    "id": "D23",
+    "lat": 0.2048271482583999,
+    "lon": 110.91158744464484,
+    "size": "L",
+    "cap_t": 300000,
+    "capex": 4500000.0,
+    "start_lat": 0.1668,
+    "start_lon": 110.9547
+   }
+  ],
+  "refineries": [
+   {
+    "id": "R1",
+    "lat": -0.3549332183789782,
+    "lon": 116.8870688868732,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": -0.34985157497745334,
+    "start_lon": 116.88259829138313
+   },
+   {
+    "id": "R2",
+    "lat": -2.2202142549590773,
+    "lon": 115.76470476651868,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": -2.213964390406396,
+    "start_lon": 115.76342215745059
+   },
+   {
+    "id": "R3",
+    "lat": 0.27923540966238913,
+    "lon": 110.79791744283023,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": 0.28538557773872997,
+    "start_lon": 110.83036176532961
+   },
+   {
+    "id": "R4",
+    "lat": -1.9008148508658003,
+    "lon": 110.03659416413095,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": -2.0124602455621963,
+    "start_lon": 110.0000029189891
+   },
+   {
+    "id": "R5",
+    "lat": -2.271083292618414,
+    "lon": 113.0507695343331,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": -2.259160443349754,
+    "start_lon": 113.06434202827158
+   },
+   {
+    "id": "R6",
+    "lat": -2.687770984712251,
+    "lon": 111.66857935137136,
+    "size": "L",
+    "cap_t": 1087000,
+    "capex": 765000000.0,
+    "start_lat": -2.70519995689,
+    "start_lon": 111.672996521
+   }
+  ]
+ },
+ "flows": {
+  "farm_depot": [
+   {
+    "from": "KAL_SUP_01",
+    "to": "D15",
+    "t": 90120.0,
+    "km": 1.700265902220089,
+    "co2_t": 37.08116707215401
+   },
+   {
+    "from": "KAL_SUP_02",
+    "to": "D14",
+    "t": 66020.0,
+    "km": 82.94722949221321,
+    "co2_t": 1325.2346140403715
+   },
+   {
+    "from": "KAL_SUP_02",
+    "to": "D19",
+    "t": 30580.0,
+    "km": 71.76752361706046,
+    "co2_t": 531.1055110747496
+   },
+   {
+    "from": "KAL_SUP_03",
+    "to": "D02",
+    "t": 96440.0,
+    "km": 23.90359833578071,
+    "co2_t": 557.8736516876514
+   },
+   {
+    "from": "KAL_SUP_04",
+    "to": "D07",
+    "t": 99220.0,
+    "km": 116.21346154562131,
+    "co2_t": 2790.429316402684
+   },
+   {
+    "from": "KAL_SUP_05",
+    "to": "D11",
+    "t": 69650.0,
+    "km": 27.248554272406714,
+    "co2_t": 459.28255682769685
+   },
+   {
+    "from": "KAL_SUP_05",
+    "to": "D22",
+    "t": 20810.0,
+    "km": 41.31103826079645,
+    "co2_t": 208.04321490213613
+   },
+   {
+    "from": "KAL_SUP_06",
+    "to": "D01",
+    "t": 85820.0,
+    "km": 7.999306253532388,
+    "co2_t": 166.1331119681122
+   },
+   {
+    "from": "KAL_SUP_06",
+    "to": "D02",
+    "t": 2090.0,
+    "km": 7.516228325106247,
+    "co2_t": 3.8015579622722377
+   },
+   {
+    "from": "KAL_SUP_07",
+    "to": "D05",
+    "t": 89060.0,
+    "km": 67.64669677567575,
+    "co2_t": 1457.956785191687
+   },
+   {
+    "from": "KAL_SUP_08",
+    "to": "D03",
+    "t": 94000.0,
+    "km": 6.062396212923394,
+    "co2_t": 137.90738905158136
+   },
+   {
+    "from": "KAL_SUP_09",
+    "to": "D19",
+    "t": 26330.0,
+    "km": 49.55270170550573,
+    "co2_t": 315.74287788924374
+   },
+   {
+    "from": "KAL_SUP_10",
+    "to": "D06",
+    "t": 99510.0,
+    "km": 43.65366083301215,
+    "co2_t": 1051.2421410573154
+   },
+   {
+    "from": "KAL_SUP_11",
+    "to": "D09",
+    "t": 77930.0,
+    "km": 67.13316249643165,
+    "co2_t": 1266.0683395099543
+   },
+   {
+    "from": "KAL_SUP_11",
+    "to": "D10",
+    "t": 14230.0,
+    "km": 74.73785063503536,
+    "co2_t": 257.37174671784584
+   },
+   {
+    "from": "KAL_SUP_12",
+    "to": "D13",
+    "t": 93800.0,
+    "km": 60.34413226213941,
+    "co2_t": 1369.7876646976597
+   },
+   {
+    "from": "KAL_SUP_13",
+    "to": "D04",
+    "t": 85670.0,
+    "km": 2.183446934438484,
+    "co2_t": 45.26752752734947
+   },
+   {
+    "from": "KAL_SUP_13",
+    "to": "D10",
+    "t": 7140.0,
+    "km": 8.607207544919362,
+    "co2_t": 14.872221772715266
+   },
+   {
+    "from": "KAL_SUP_14",
+    "to": "D15",
+    "t": 29340.0,
+    "km": 30.95205669000763,
+    "co2_t": 219.7682690749274
+   },
+   {
+    "from": "KAL_SUP_15",
+    "to": "D05",
+    "t": 60940.0,
+    "km": 76.43284976892832,
+    "co2_t": 1127.191923310275
+   },
+   {
+    "from": "KAL_SUP_16",
+    "to": "D21",
+    "t": 98250.0,
+    "km": 42.72917425906934,
+    "co2_t": 1015.950211770762
+   },
+   {
+    "from": "KAL_SUP_17",
+    "to": "D06",
+    "t": 88270.0,
+    "km": 3.9060928621067537,
+    "co2_t": 83.43937769903548
+   },
+   {
+    "from": "KAL_SUP_19",
+    "to": "D21",
+    "t": 99710.0,
+    "km": 33.830118527697245,
+    "co2_t": 816.3146706519996
+   },
+   {
+    "from": "KAL_SUP_20",
+    "to": "D20",
+    "t": 34100.0,
+    "km": 63.79318691463179,
+    "co2_t": 526.4341370569244
+   },
+   {
+    "from": "KAL_SUP_21",
+    "to": "D07",
+    "t": 90650.0,
+    "km": 1.0629535637456826,
+    "co2_t": 23.31833121395816
+   },
+   {
+    "from": "KAL_SUP_23",
+    "to": "D12",
+    "t": 92520.0,
+    "km": 71.03872993075396,
+    "co2_t": 1590.5457969527922
+   },
+   {
+    "from": "KAL_SUP_24",
+    "to": "D16",
+    "t": 96520.0,
+    "km": 81.13192151074139,
+    "co2_t": 1895.0664415404556
+   },
+   {
+    "from": "KAL_SUP_25",
+    "to": "D08",
+    "t": 88000.0,
+    "km": 2.168930371630149,
+    "co2_t": 46.189541194235645
+   },
+   {
+    "from": "KAL_SUP_26",
+    "to": "D18",
+    "t": 93860.0,
+    "km": 143.27298790352867,
+    "co2_t": 3254.3198399992984
+   },
+   {
+    "from": "KAL_SUP_27",
+    "to": "D19",
+    "t": 93250.0,
+    "km": 90.75283698491951,
+    "co2_t": 2047.9738958201863
+   },
+   {
+    "from": "KAL_SUP_28",
+    "to": "D19",
+    "t": 33950.0,
+    "km": 53.704875203077506,
+    "co2_t": 441.2338841809644
+   },
+   {
+    "from": "KAL_SUP_28",
+    "to": "D20",
+    "t": 54650.0,
+    "km": 63.39525403536886,
+    "co2_t": 838.4212531939638
+   },
+   {
+    "from": "KAL_SUP_29",
+    "to": "D01",
+    "t": 88410.0,
+    "km": 40.86388596794698,
+    "co2_t": 874.2918303391385
+   },
+   {
+    "from": "KAL_SUP_30",
+    "to": "D09",
+    "t": 99810.0,
+    "km": 6.2937826641991865,
+    "co2_t": 152.02015234672047
+   },
+   {
+    "from": "KAL_SUP_32",
+    "to": "D17",
+    "t": 92040.0,
+    "km": 36.88217981506118,
+    "co2_t": 821.5018709031319
+   },
+   {
+    "from": "KAL_SUP_33",
+    "to": "D21",
+    "t": 8170.0,
+    "km": 60.60580983253113,
+    "co2_t": 119.8261708522906
+   },
+   {
+    "from": "KAL_SUP_33",
+    "to": "D22",
+    "t": 88520.0,
+    "km": 72.85620801973889,
+    "co2_t": 1560.714031205563
+   },
+   {
+    "from": "KAL_SUP_34",
+    "to": "D03",
+    "t": 87840.0,
+    "km": 68.99952866683024,
+    "co2_t": 1466.742300738837
+   },
+   {
+    "from": "KAL_SUP_36",
+    "to": "D22",
+    "t": 91250.0,
+    "km": 74.58695986561821,
+    "co2_t": 1647.0665412325143
+   },
+   {
+    "from": "KAL_SUP_37",
+    "to": "D02",
+    "t": 97190.0,
+    "km": 24.677363144597617,
+    "co2_t": 580.4110876136731
+   },
+   {
+    "from": "KAL_SUP_38",
+    "to": "D09",
+    "t": 23620.0,
+    "km": 6.828587102055865,
+    "co2_t": 39.0324770188354
+   },
+   {
+    "from": "KAL_SUP_39",
+    "to": "D12",
+    "t": 95760.0,
+    "km": 17.731972688246287,
+    "co2_t": 410.9193165196044
+   },
+   {
+    "from": "KAL_SUP_41",
+    "to": "D02",
+    "t": 14250.0,
+    "km": 26.99407294353288,
+    "co2_t": 93.08906054577312
+   },
+   {
+    "from": "KAL_SUP_41",
+    "to": "D17",
+    "t": 76830.0,
+    "km": 23.471324896696416,
+    "co2_t": 436.3990578187909
+   },
+   {
+    "from": "KAL_SUP_42",
+    "to": "D03",
+    "t": 73230.0,
+    "km": 63.12382341141421,
+    "co2_t": 1118.6589363971227
+   },
+   {
+    "from": "KAL_SUP_42",
+    "to": "D12",
+    "t": 15530.0,
+    "km": 64.78017020386955,
+    "co2_t": 243.46072247039476
+   },
+   {
+    "from": "KAL_SUP_43",
+    "to": "D17",
+    "t": 34160.0,
+    "km": 39.403089715747896,
+    "co2_t": 325.73430981496745
+   },
+   {
+    "from": "KAL_SUP_44",
+    "to": "D10",
+    "t": 91870.0,
+    "km": 0.9784944733316047,
+    "co2_t": 21.754417518123834
+   },
+   {
+    "from": "KAL_SUP_45",
+    "to": "D11",
+    "t": 94550.0,
+    "km": 10.35731235524329,
+    "co2_t": 236.98669973155722
+   },
+   {
+    "from": "KAL_SUP_46",
+    "to": "D12",
+    "t": 96190.0,
+    "km": 4.841928416829601,
+    "co2_t": 112.71031284839111
+   },
+   {
+    "from": "KAL_SUP_47",
+    "to": "D13",
+    "t": 88600.0,
+    "km": 9.457961973727759,
+    "co2_t": 202.7900542710916
+   },
+   {
+    "from": "KAL_SUP_48",
+    "to": "D01",
+    "t": 88950.0,
+    "km": 38.82490033787202,
+    "co2_t": 835.7409221829994
+   },
+   {
+    "from": "KAL_SUP_49",
+    "to": "D14",
+    "t": 94090.0,
+    "km": 4.123940665131417,
+    "co2_t": 93.90122167809604
+   },
+   {
+    "from": "KAL_SUP_50",
+    "to": "D02",
+    "t": 90030.0,
+    "km": 40.81220748315503,
+    "co2_t": 889.1861756094441
+   },
+   {
+    "from": "KAL_SUP_51",
+    "to": "D01",
+    "t": 36820.0,
+    "km": 9.05475005096811,
+    "co2_t": 80.68180704414829
+   },
+   {
+    "from": "KAL_SUP_51",
+    "to": "D15",
+    "t": 56190.0,
+    "km": 4.749904808865198,
+    "co2_t": 64.58911059285278
+   },
+   {
+    "from": "KAL_SUP_52",
+    "to": "D07",
+    "t": 90570.0,
+    "km": 97.3100667211544,
+    "co2_t": 2132.8362037902584
+   },
+   {
+    "from": "KAL_SUP_53",
+    "to": "D03",
+    "t": 44930.0,
+    "km": 58.55389539819376,
+    "co2_t": 636.6600178982847
+   },
+   {
+    "from": "KAL_SUP_53",
+    "to": "D08",
+    "t": 46770.0,
+    "km": 70.93600575541315,
+    "co2_t": 802.8778313817228
+   },
+   {
+    "from": "KAL_SUP_54",
+    "to": "D10",
+    "t": 92830.0,
+    "km": 52.24229356497227,
+    "co2_t": 1173.615811016003
+   },
+   {
+    "from": "KAL_SUP_55",
+    "to": "D06",
+    "t": 89760.0,
+    "km": 44.30641714314541,
+    "co2_t": 962.4204486700331
+   },
+   {
+    "from": "KAL_SUP_56",
+    "to": "D16",
+    "t": 89470.0,
+    "km": 0.9223731474834382,
+    "co2_t": 19.970983572293058
+   },
+   {
+    "from": "KAL_SUP_57",
+    "to": "D06",
+    "t": 22460.0,
+    "km": 40.33956135631447,
+    "co2_t": 219.25842463120318
+   },
+   {
+    "from": "KAL_SUP_57",
+    "to": "D10",
+    "t": 2610.0,
+    "km": 40.86681332604073,
+    "co2_t": 25.812296632993846
+   },
+   {
+    "from": "KAL_SUP_58",
+    "to": "D17",
+    "t": 96970.0,
+    "km": 11.196969961006868,
+    "co2_t": 262.7563828627583
+   },
+   {
+    "from": "KAL_SUP_59",
+    "to": "D18",
+    "t": 87720.0,
+    "km": 135.9024823939663,
+    "co2_t": 2884.970512854891
+   },
+   {
+    "from": "KAL_SUP_60",
+    "to": "D18",
+    "t": 93130.0,
+    "km": 76.8443524372387,
+    "co2_t": 1731.8765192801695
+   },
+   {
+    "from": "KAL_SUP_61",
+    "to": "D16",
+    "t": 89760.0,
+    "km": 79.66967379094325,
+    "co2_t": 1730.5782805129659
+   },
+   {
+    "from": "KAL_SUP_63",
+    "to": "D08",
+    "t": 92730.0,
+    "km": 32.26781626170393,
+    "co2_t": 724.1110936713688
+   },
+   {
+    "from": "KAL_SUP_64",
+    "to": "D20",
+    "t": 89400.0,
+    "km": 48.36481081363567,
+    "co2_t": 1046.363008990845
+   },
+   {
+    "from": "KAL_SUP_65",
+    "to": "D19",
+    "t": 88100.0,
+    "km": 7.709669578261972,
+    "co2_t": 164.3716973424609
+   },
+   {
+    "from": "KAL_SUP_66",
+    "to": "D09",
+    "t": 98640.0,
+    "km": 21.677145066394313,
+    "co2_t": 517.4525286224907
+   },
+   {
+    "from": "KAL_SUP_67",
+    "to": "D20",
+    "t": 89300.0,
+    "km": 2.030066348411357,
+    "co2_t": 43.87095182897847
+   },
+   {
+    "from": "KAL_SUP_68",
+    "to": "D14",
+    "t": 35940.0,
+    "km": 46.206149674046785,
+    "co2_t": 401.8770626670284
+   },
+   {
+    "from": "KAL_SUP_69",
+    "to": "D15",
+    "t": 30990.0,
+    "km": 30.652183100116904,
+    "co2_t": 229.87849933397473
+   },
+   {
+    "from": "KAL_SUP_71",
+    "to": "D21",
+    "t": 93870.0,
+    "km": 8.678876856369568,
+    "co2_t": 197.15405326279355
+   },
+   {
+    "from": "KAL_SUP_72",
+    "to": "D22",
+    "t": 99420.0,
+    "km": 2.61005788745127,
+    "co2_t": 62.797053151238075
+   },
+   {
+    "from": "KAL_SUP_73",
+    "to": "D08",
+    "t": 66020.0,
+    "km": 91.44560517269498,
+    "co2_t": 1461.01180254732
+   },
+   {
+    "from": "KAL_SUP_74",
+    "to": "D08",
+    "t": 6480.0,
+    "km": 27.04346407280453,
+    "co2_t": 42.40847862040915
+   },
+   {
+    "from": "KAL_SUP_74",
+    "to": "D23",
+    "t": 93130.0,
+    "km": 16.0589251896053,
+    "co2_t": 361.9273841037218
+   },
+   {
+    "from": "KAL_SUP_75",
+    "to": "D23",
+    "t": 93870.0,
+    "km": 8.309918499074557,
+    "co2_t": 188.77259598096714
+   },
+   {
+    "from": "KAL_SUP_76",
+    "to": "D19",
+    "t": 27790.0,
+    "km": 63.56547596612218,
+    "co2_t": 427.4892676578456
+   },
+   {
+    "from": "KAL_SUP_77",
+    "to": "D10",
+    "t": 91320.0,
+    "km": 66.17809212032085,
+    "co2_t": 1462.4987761275036
+   },
+   {
+    "from": "KAL_SUP_78",
+    "to": "D14",
+    "t": 97140.0,
+    "km": 54.72357587729085,
+    "co2_t": 1286.435254894248
+   },
+   {
+    "from": "KAL_SUP_79",
+    "to": "D20",
+    "t": 32550.0,
+    "km": 54.2198064707286,
+    "co2_t": 427.09483755057624
+   }
+  ],
+  "depot_refinery": [
+   {
+    "from": "D01",
+    "to": "R4",
+    "t": 300000.0,
+    "km": 0.1123650380270068,
+    "co2_t": 5.346328509324983
+   },
+   {
+    "from": "D02",
+    "to": "R4",
+    "t": 300000.0,
+    "km": 2.7447343814235143,
+    "co2_t": 130.5944618681308
+   },
+   {
+    "from": "D03",
+    "to": "R3",
+    "t": 300000.0,
+    "km": 9.187458013657947,
+    "co2_t": 437.13925228984516
+   },
+   {
+    "from": "D04",
+    "to": "R1",
+    "t": 85670.0,
+    "km": 5.205038599890187,
+    "co2_t": 70.72222317682115
+   },
+   {
+    "from": "D05",
+    "to": "R6",
+    "t": 150000.0,
+    "km": 157.17556852243112,
+    "co2_t": 3739.206775148636
+   },
+   {
+    "from": "D06",
+    "to": "R1",
+    "t": 300000.0,
+    "km": 8.44501082969473,
+    "co2_t": 401.8136152768753
+   },
+   {
+    "from": "D07",
+    "to": "R2",
+    "t": 280440.0,
+    "km": 2.8938557278106933,
+    "co2_t": 128.7122899887268
+   },
+   {
+    "from": "D08",
+    "to": "R3",
+    "t": 300000.0,
+    "km": 5.948095771314728,
+    "co2_t": 283.01039679915476
+   },
+   {
+    "from": "D09",
+    "to": "R1",
+    "t": 300000.0,
+    "km": 12.63674500600877,
+    "co2_t": 601.2563273858972
+   },
+   {
+    "from": "D10",
+    "to": "R1",
+    "t": 300000.0,
+    "km": 1.3053775681750215,
+    "co2_t": 62.10986469376751
+   },
+   {
+    "from": "D11",
+    "to": "R5",
+    "t": 164200.0,
+    "km": 22.722498611039814,
+    "co2_t": 591.7420355285321
+   },
+   {
+    "from": "D12",
+    "to": "R3",
+    "t": 300000.0,
+    "km": 6.508694817070569,
+    "co2_t": 309.68369939621766
+   },
+   {
+    "from": "D13",
+    "to": "R5",
+    "t": 182400.0,
+    "km": 18.600103617639462,
+    "co2_t": 538.0757015173896
+   },
+   {
+    "from": "D14",
+    "to": "R6",
+    "t": 293190.0,
+    "km": 7.6650183366014915,
+    "co2_t": 356.42284676075906
+   },
+   {
+    "from": "D15",
+    "to": "R4",
+    "t": 187000.0,
+    "km": 12.680317869379365,
+    "co2_t": 376.07540343362706
+   },
+   {
+    "from": "D15",
+    "to": "R6",
+    "t": 19640.0,
+    "km": 249.49170072580924,
+    "co2_t": 777.142696557626
+   },
+   {
+    "from": "D16",
+    "to": "R2",
+    "t": 275750.0,
+    "km": 1.2299771980836813,
+    "co2_t": 53.79176128213181
+   },
+   {
+    "from": "D17",
+    "to": "R4",
+    "t": 300000.0,
+    "km": 12.059616254033,
+    "co2_t": 573.7965413668901
+   },
+   {
+    "from": "D18",
+    "to": "R2",
+    "t": 274710.0,
+    "km": 159.15575090161587,
+    "co2_t": 6934.257865967006
+   },
+   {
+    "from": "D19",
+    "to": "R6",
+    "t": 300000.0,
+    "km": 14.284155541556263,
+    "co2_t": 679.640120667247
+   },
+   {
+    "from": "D20",
+    "to": "R6",
+    "t": 300000.0,
+    "km": 3.729498979072295,
+    "co2_t": 177.4495614242598
+   },
+   {
+    "from": "D21",
+    "to": "R5",
+    "t": 300000.0,
+    "km": 16.1371753502668,
+    "co2_t": 767.8068031656943
+   },
+   {
+    "from": "D22",
+    "to": "R5",
+    "t": 300000.0,
+    "km": 3.4803156409970932,
+    "co2_t": 165.59341819864167
+   },
+   {
+    "from": "D23",
+    "to": "R3",
+    "t": 187000.0,
+    "km": 19.638646079159663,
+    "co2_t": 582.446893144933
+   }
+  ],
+  "refinery_airport": [
+   {
+    "from": "R1",
+    "to": "TRK",
+    "t": 197134.0,
+    "km": 541.2428184834096,
+    "co2_t": 16043.378206134881,
+    "mode": "truck + barge"
+   },
+   {
+    "from": "R2",
+    "to": "BPN",
+    "t": 166180.0,
+    "km": 213.4446542293509,
+    "co2_t": 5625.578896677598,
+    "mode": "truck"
+   },
+   {
+    "from": "R3",
+    "to": "PNK",
+    "t": 170034.0,
+    "km": 210.86224992477267,
+    "co2_t": 5686.405036068215,
+    "mode": "truck"
+   },
+   {
+    "from": "R3",
+    "to": "TRK",
+    "t": 47366.0,
+    "km": 1072.8563891989,
+    "co2_t": 7848.405206904102,
+    "mode": "truck + barge"
+   },
+   {
+    "from": "R4",
+    "to": "PNK",
+    "t": 129966.0,
+    "km": 268.9967709547636,
+    "co2_t": 5544.724885357618,
+    "mode": "truck"
+   },
+   {
+    "from": "R4",
+    "to": "PKN",
+    "t": 87434.0,
+    "km": 263.40786166636934,
+    "co2_t": 3652.6853521422618,
+    "mode": "truck"
+   },
+   {
+    "from": "R5",
+    "to": "BPN",
+    "t": 133820.0,
+    "km": 573.8891034306753,
+    "co2_t": 12180.137395625343,
+    "mode": "truck"
+   },
+   {
+    "from": "R5",
+    "to": "TRK",
+    "t": 55500.0,
+    "km": 1039.7324098377392,
+    "co2_t": 8904.617591114731,
+    "mode": "truck + barge"
+   },
+   {
+    "from": "R6",
+    "to": "PKN",
+    "t": 212566.0,
+    "km": 2.598896854034792,
+    "co2_t": 87.61652543581687,
+    "mode": "truck"
+   }
+  ]
+ },
+ "supply_t": {
+  "KAL_SUP_01": 90120.0,
+  "KAL_SUP_02": 96600.0,
+  "KAL_SUP_03": 96440.0,
+  "KAL_SUP_04": 99220.0,
+  "KAL_SUP_05": 90460.0,
+  "KAL_SUP_06": 87910.0,
+  "KAL_SUP_07": 89060.0,
+  "KAL_SUP_08": 94000.0,
+  "KAL_SUP_09": 26330.0,
+  "KAL_SUP_10": 99510.0,
+  "KAL_SUP_11": 92160.0,
+  "KAL_SUP_12": 93800.0,
+  "KAL_SUP_13": 92810.0,
+  "KAL_SUP_14": 29340.0,
+  "KAL_SUP_15": 88320.0,
+  "KAL_SUP_16": 98250.0,
+  "KAL_SUP_17": 88270.0,
+  "KAL_SUP_18": 92890.0,
+  "KAL_SUP_19": 99710.0,
+  "KAL_SUP_20": 34100.0,
+  "KAL_SUP_21": 90650.0,
+  "KAL_SUP_22": 89000.0,
+  "KAL_SUP_23": 92520.0,
+  "KAL_SUP_24": 96520.0,
+  "KAL_SUP_25": 88000.0,
+  "KAL_SUP_26": 93860.0,
+  "KAL_SUP_27": 93250.0,
+  "KAL_SUP_28": 88600.0,
+  "KAL_SUP_29": 88410.0,
+  "KAL_SUP_30": 99810.0,
+  "KAL_SUP_31": 96650.0,
+  "KAL_SUP_32": 92040.0,
+  "KAL_SUP_33": 96690.0,
+  "KAL_SUP_34": 87840.0,
+  "KAL_SUP_35": 99900.0,
+  "KAL_SUP_36": 91250.0,
+  "KAL_SUP_37": 97190.0,
+  "KAL_SUP_38": 23620.0,
+  "KAL_SUP_39": 95760.0,
+  "KAL_SUP_40": 22840.0,
+  "KAL_SUP_41": 91080.0,
+  "KAL_SUP_42": 88760.0,
+  "KAL_SUP_43": 87960.0,
+  "KAL_SUP_44": 91870.0,
+  "KAL_SUP_45": 94550.0,
+  "KAL_SUP_46": 96190.0,
+  "KAL_SUP_47": 88600.0,
+  "KAL_SUP_48": 88950.0,
+  "KAL_SUP_49": 94090.0,
+  "KAL_SUP_50": 90030.0,
+  "KAL_SUP_51": 93010.0,
+  "KAL_SUP_52": 90570.0,
+  "KAL_SUP_53": 91700.0,
+  "KAL_SUP_54": 92830.0,
+  "KAL_SUP_55": 89760.0,
+  "KAL_SUP_56": 89470.0,
+  "KAL_SUP_57": 25070.0,
+  "KAL_SUP_58": 96970.0,
+  "KAL_SUP_59": 87720.0,
+  "KAL_SUP_60": 93130.0,
+  "KAL_SUP_61": 89760.0,
+  "KAL_SUP_62": 96050.0,
+  "KAL_SUP_63": 92730.0,
+  "KAL_SUP_64": 89400.0,
+  "KAL_SUP_65": 88100.0,
+  "KAL_SUP_66": 98640.0,
+  "KAL_SUP_67": 89300.0,
+  "KAL_SUP_68": 35940.0,
+  "KAL_SUP_69": 30990.0,
+  "KAL_SUP_70": 96080.0,
+  "KAL_SUP_71": 93870.0,
+  "KAL_SUP_72": 99420.0,
+  "KAL_SUP_73": 99030.0,
+  "KAL_SUP_74": 99610.0,
+  "KAL_SUP_75": 93870.0,
+  "KAL_SUP_76": 27790.0,
+  "KAL_SUP_77": 91320.0,
+  "KAL_SUP_78": 97140.0,
+  "KAL_SUP_79": 32550.0,
+  "KAL_SUP_80": 92400.0
+ },
+ "demand_t": {
+  "PNK": 300000.0,
+  "PKN": 300000.0,
+  "BPN": 300000.0,
+  "TRK": 300000.0
+ },
+ "shortfall_t": {
+  "PNK": 0.0,
+  "PKN": 0.0,
+  "BPN": 0.0,
+  "TRK": 0.0
+ },
+ "cost": {
+  "capex": 4689000000.0,
+  "annualised_capex": 234450000.0,
+  "fixed_opex_per_year": 234450000.0,
+  "variable_opex_per_year": 354235670.0,
+  "transport_per_year": 72717361.25635408,
+  "imports_per_year": 0.0,
+  "total_annual": 895853031.2563541,
+  "total_20yr": 17917060625.127083
+ },
+ "airports": [
+  {
+   "iata": "PNK",
+   "short": "Supadio",
+   "lat": -0.150710999965667,
+   "lon": 109.403999328613
+  },
+  {
+   "iata": "PKN",
+   "short": "Iskandar",
+   "lat": -2.70519995689,
+   "lon": 111.672996521
+  },
+  {
+   "iata": "BPN",
+   "short": "Sepinggan",
+   "lat": -1.26827001572,
+   "lon": 116.893997192
+  },
+  {
+   "iata": "TRK",
+   "short": "Juwata",
+   "lat": 3.326667,
+   "lon": 117.569444
+  }
+ ],
+ "emissions": {
+  "total_t_per_year": 144296.11159477307,
+  "by_leg_t": {
+   "farm_depot": 59978.72561576437,
+   "depot_refinery": 18743.83688354813,
+   "refinery_airport": 65573.54909546056
+  },
+  "kg_per_t_saf": 120.24675966231091,
+  "g_per_MJ": 2.7964362712165323,
+  "pct_of_fossil_jet_baseline": 3.1420632260859915,
+  "tonne_km_per_year": 787913981.0527116
+ },
+ "objective": "cost",
+ "event": null,
+ "removed_unused_facilities": [],
+ "downsized_depots": [
+  "D04"
+ ],
+ "refine_history_total_annual": [
+  898998860.0084105,
+  896757838.4521915,
+  896218771.0132806,
+  895961573.6340483,
+  895853031.2563541
+ ],
+ "justification": [
+  {
+   "id": "D01",
+   "type": "depot",
+   "size": "L",
+   "lat": -1.9011,
+   "lon": 110.0373,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 6.2,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R4"
+   ],
+   "avg_inbound_km": 27.0,
+   "moved_by_refinement_km": 19.0,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D02",
+   "type": "depot",
+   "size": "L",
+   "lat": -1.8984,
+   "lon": 110.0178,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 5.8,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 5,
+   "customers": [
+    "R4"
+   ],
+   "avg_inbound_km": 29.3,
+   "moved_by_refinement_km": 5.8,
+   "why": "Weber point of its 5 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D03",
+   "type": "depot",
+   "size": "L",
+   "lat": 0.2887,
+   "lon": 110.7351,
+   "near": "Sanggau, West Kalimantan",
+   "km_to_nearest_farm": 3.3,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R3"
+   ],
+   "avg_inbound_km": 46.3,
+   "moved_by_refinement_km": 4.7,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D04",
+   "type": "depot",
+   "size": "S",
+   "lat": -0.3211,
+   "lon": 116.8748,
+   "near": "Kutai Kartanegara, East Kalimantan",
+   "km_to_nearest_farm": 1.7,
+   "inflow_kt": 85.7,
+   "utilisation_pct": 57.1,
+   "suppliers": 1,
+   "customers": [
+    "R1"
+   ],
+   "avg_inbound_km": 2.2,
+   "moved_by_refinement_km": 1.7,
+   "why": "Weber point of its 1 suppliers and 1 customers: minimises tonne-km cost for 86 kt/yr throughput"
+  },
+  {
+   "id": "D05",
+   "type": "depot",
+   "size": "S",
+   "lat": -2.0131,
+   "lon": 110.8152,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 52.0,
+   "inflow_kt": 150.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 2,
+   "customers": [
+    "R6"
+   ],
+   "avg_inbound_km": 71.2,
+   "moved_by_refinement_km": 58.8,
+   "why": "Weber point of its 2 suppliers and 1 customers: minimises tonne-km cost for 150 kt/yr throughput"
+  },
+  {
+   "id": "D06",
+   "type": "depot",
+   "size": "L",
+   "lat": -0.367,
+   "lon": 116.8299,
+   "near": "Kutai Kartanegara, East Kalimantan",
+   "km_to_nearest_farm": 3.0,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R1"
+   ],
+   "avg_inbound_km": 31.9,
+   "moved_by_refinement_km": 3.0,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D07",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.2006,
+   "lon": 115.7607,
+   "near": "Paser, East Kalimantan",
+   "km_to_nearest_farm": 0.8,
+   "inflow_kt": 280.4,
+   "utilisation_pct": 93.5,
+   "suppliers": 3,
+   "customers": [
+    "R2"
+   ],
+   "avg_inbound_km": 72.9,
+   "moved_by_refinement_km": 0.8,
+   "why": "Weber point of its 3 suppliers and 1 customers: minimises tonne-km cost for 280 kt/yr throughput"
+  },
+  {
+   "id": "D08",
+   "type": "depot",
+   "size": "L",
+   "lat": 0.3148,
+   "lon": 110.8186,
+   "near": "Sanggau, West Kalimantan",
+   "km_to_nearest_farm": 1.7,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 5,
+   "customers": [
+    "R3"
+   ],
+   "avg_inbound_km": 42.4,
+   "moved_by_refinement_km": 1.7,
+   "why": "Weber point of its 5 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D09",
+   "type": "depot",
+   "size": "L",
+   "lat": -0.346,
+   "lon": 116.974,
+   "near": "Kutai Kartanegara, East Kalimantan",
+   "km_to_nearest_farm": 4.8,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R1"
+   ],
+   "avg_inbound_km": 27.2,
+   "moved_by_refinement_km": 4.8,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D10",
+   "type": "depot",
+   "size": "L",
+   "lat": -0.3617,
+   "lon": 116.893,
+   "near": "Kutai Kartanegara, East Kalimantan",
+   "km_to_nearest_farm": 0.8,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 6,
+   "customers": [
+    "R1"
+   ],
+   "avg_inbound_km": 40.7,
+   "moved_by_refinement_km": 0.8,
+   "why": "Weber point of its 6 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D11",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.1139,
+   "lon": 113.0486,
+   "near": "Kotawaringin Timur, Central Kalimantan",
+   "km_to_nearest_farm": 8.0,
+   "inflow_kt": 164.2,
+   "utilisation_pct": 54.7,
+   "suppliers": 2,
+   "customers": [
+    "R5"
+   ],
+   "avg_inbound_km": 17.5,
+   "moved_by_refinement_km": 8.0,
+   "why": "Weber point of its 2 suppliers and 1 customers: minimises tonne-km cost for 164 kt/yr throughput"
+  },
+  {
+   "id": "D12",
+   "type": "depot",
+   "size": "L",
+   "lat": 0.2694,
+   "lon": 110.754,
+   "near": "Sanggau, West Kalimantan",
+   "km_to_nearest_farm": 3.7,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R3"
+   ],
+   "avg_inbound_km": 32.5,
+   "moved_by_refinement_km": 3.7,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D13",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.3973,
+   "lon": 113.0759,
+   "near": "Kotawaringin Timur, Central Kalimantan",
+   "km_to_nearest_farm": 7.3,
+   "inflow_kt": 182.4,
+   "utilisation_pct": 60.8,
+   "suppliers": 2,
+   "customers": [
+    "R5"
+   ],
+   "avg_inbound_km": 35.6,
+   "moved_by_refinement_km": 7.3,
+   "why": "Weber point of its 2 suppliers and 1 customers: minimises tonne-km cost for 182 kt/yr throughput"
+  },
+  {
+   "id": "D14",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.681,
+   "lon": 111.6159,
+   "near": "Kotawaringin Barat, Central Kalimantan",
+   "km_to_nearest_farm": 3.2,
+   "inflow_kt": 293.2,
+   "utilisation_pct": 97.7,
+   "suppliers": 4,
+   "customers": [
+    "R6"
+   ],
+   "avg_inbound_km": 43.8,
+   "moved_by_refinement_km": 3.2,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 293 kt/yr throughput"
+  },
+  {
+   "id": "D15",
+   "type": "depot",
+   "size": "L",
+   "lat": -1.9579,
+   "lon": 110.1033,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 1.3,
+   "inflow_kt": 206.6,
+   "utilisation_pct": 68.9,
+   "suppliers": 4,
+   "customers": [
+    "R4",
+    "R6"
+   ],
+   "avg_inbound_km": 11.0,
+   "moved_by_refinement_km": 3.7,
+   "why": "Weber point of its 4 suppliers and 2 customers: minimises tonne-km cost for 207 kt/yr throughput"
+  },
+  {
+   "id": "D16",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.2285,
+   "lon": 115.7664,
+   "near": "Paser, East Kalimantan",
+   "km_to_nearest_farm": 0.7,
+   "inflow_kt": 275.8,
+   "utilisation_pct": 91.9,
+   "suppliers": 3,
+   "customers": [
+    "R2"
+   ],
+   "avg_inbound_km": 54.6,
+   "moved_by_refinement_km": 0.7,
+   "why": "Weber point of its 3 suppliers and 1 customers: minimises tonne-km cost for 276 kt/yr throughput"
+  },
+  {
+   "id": "D17",
+   "type": "depot",
+   "size": "L",
+   "lat": -1.8672,
+   "lon": 109.9602,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 7.6,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R4"
+   ],
+   "avg_inbound_km": 25.4,
+   "moved_by_refinement_km": 8.6,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D18",
+   "type": "depot",
+   "size": "L",
+   "lat": -3.1268,
+   "lon": 115.1392,
+   "near": "Tanah Laut, South Kalimantan",
+   "km_to_nearest_farm": 59.1,
+   "inflow_kt": 274.7,
+   "utilisation_pct": 91.6,
+   "suppliers": 3,
+   "customers": [
+    "R2"
+   ],
+   "avg_inbound_km": 118.4,
+   "moved_by_refinement_km": 59.1,
+   "why": "Weber point of its 3 suppliers and 1 customers: minimises tonne-km cost for 275 kt/yr throughput"
+  },
+  {
+   "id": "D19",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.5919,
+   "lon": 111.6925,
+   "near": "Kotawaringin Barat, Central Kalimantan",
+   "km_to_nearest_farm": 5.9,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 6,
+   "customers": [
+    "R6"
+   ],
+   "avg_inbound_km": 54.1,
+   "moved_by_refinement_km": 5.9,
+   "why": "Weber point of its 6 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D20",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.6812,
+   "lon": 111.6936,
+   "near": "Kotawaringin Barat, Central Kalimantan",
+   "km_to_nearest_farm": 1.6,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 5,
+   "customers": [
+    "R6"
+   ],
+   "avg_inbound_km": 39.7,
+   "moved_by_refinement_km": 1.6,
+   "why": "Weber point of its 5 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D21",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.3629,
+   "lon": 112.9872,
+   "near": "Kotawaringin Timur, Central Kalimantan",
+   "km_to_nearest_farm": 6.7,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R5"
+   ],
+   "avg_inbound_km": 29.6,
+   "moved_by_refinement_km": 6.7,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D22",
+   "type": "depot",
+   "size": "L",
+   "lat": -2.287,
+   "lon": 113.0327,
+   "near": "Kotawaringin Timur, Central Kalimantan",
+   "km_to_nearest_farm": 2.0,
+   "inflow_kt": 300.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "R5"
+   ],
+   "avg_inbound_km": 47.9,
+   "moved_by_refinement_km": 2.0,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 300 kt/yr throughput"
+  },
+  {
+   "id": "D23",
+   "type": "depot",
+   "size": "L",
+   "lat": 0.2048,
+   "lon": 110.9116,
+   "near": "Sanggau, West Kalimantan",
+   "km_to_nearest_farm": 6.4,
+   "inflow_kt": 187.0,
+   "utilisation_pct": 62.3,
+   "suppliers": 2,
+   "customers": [
+    "R3"
+   ],
+   "avg_inbound_km": 12.2,
+   "moved_by_refinement_km": 6.4,
+   "why": "Weber point of its 2 suppliers and 1 customers: minimises tonne-km cost for 187 kt/yr throughput"
+  },
+  {
+   "id": "R1",
+   "type": "refinery",
+   "size": "L",
+   "lat": -0.3549,
+   "lon": 116.8871,
+   "near": "Kutai Kartanegara, East Kalimantan",
+   "km_to_nearest_farm": 1.8,
+   "inflow_kt": 985.7,
+   "utilisation_pct": 90.7,
+   "suppliers": 4,
+   "customers": [
+    "TRK"
+   ],
+   "avg_inbound_km": 7.3,
+   "moved_by_refinement_km": 0.8,
+   "why": "Weber point of its 4 suppliers and 1 customers: minimises tonne-km cost for 986 kt/yr throughput"
+  },
+  {
+   "id": "R2",
+   "type": "refinery",
+   "size": "L",
+   "lat": -2.2202,
+   "lon": 115.7647,
+   "near": "Paser, East Kalimantan",
+   "km_to_nearest_farm": 1.7,
+   "inflow_kt": 830.9,
+   "utilisation_pct": 76.4,
+   "suppliers": 3,
+   "customers": [
+    "BPN"
+   ],
+   "avg_inbound_km": 54.0,
+   "moved_by_refinement_km": 0.7,
+   "why": "Weber point of its 3 suppliers and 1 customers: minimises tonne-km cost for 831 kt/yr throughput"
+  },
+  {
+   "id": "R3",
+   "type": "refinery",
+   "size": "L",
+   "lat": 0.2792,
+   "lon": 110.7979,
+   "near": "Sanggau, West Kalimantan",
+   "km_to_nearest_farm": 6.0,
+   "inflow_kt": 1087.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "PNK",
+    "TRK"
+   ],
+   "avg_inbound_km": 9.4,
+   "moved_by_refinement_km": 3.7,
+   "why": "Weber point of its 4 suppliers and 2 customers: minimises tonne-km cost for 1087 kt/yr throughput"
+  },
+  {
+   "id": "R4",
+   "type": "refinery",
+   "size": "L",
+   "lat": -1.9008,
+   "lon": 110.0366,
+   "near": "Ketapang, West Kalimantan",
+   "km_to_nearest_farm": 6.1,
+   "inflow_kt": 1087.0,
+   "utilisation_pct": 100.0,
+   "suppliers": 4,
+   "customers": [
+    "PKN",
+    "PNK"
+   ],
+   "avg_inbound_km": 6.3,
+   "moved_by_refinement_km": 13.1,
+   "why": "Weber point of its 4 suppliers and 2 customers: minimises tonne-km cost for 1087 kt/yr throughput"
+  },
+  {
+   "id": "R5",
+   "type": "refinery",
+   "size": "L",
+   "lat": -2.2711,
+   "lon": 113.0508,
+   "near": "Kotawaringin Timur, Central Kalimantan",
+   "km_to_nearest_farm": 4.7,
+   "inflow_kt": 946.6,
+   "utilisation_pct": 87.1,
+   "suppliers": 4,
+   "customers": [
+    "BPN",
+    "TRK"
+   ],
+   "avg_inbound_km": 13.7,
+   "moved_by_refinement_km": 2.0,
+   "why": "Weber point of its 4 suppliers and 2 customers: minimises tonne-km cost for 947 kt/yr throughput"
+  },
+  {
+   "id": "R6",
+   "type": "refinery",
+   "size": "L",
+   "lat": -2.6878,
+   "lon": 111.6686,
+   "near": "Kotawaringin Barat, Central Kalimantan",
+   "km_to_nearest_farm": 4.3,
+   "inflow_kt": 1062.8,
+   "utilisation_pct": 97.8,
+   "suppliers": 5,
+   "customers": [
+    "PKN"
+   ],
+   "avg_inbound_km": 34.0,
+   "moved_by_refinement_km": 2.0,
+   "why": "Weber point of its 5 suppliers and 1 customers: minimises tonne-km cost for 1063 kt/yr throughput"
+  }
+ ],
+ "checks": [
+  {
+   "check": "solver finished",
+   "pass": true,
+   "detail": "Optimal"
+  },
+  {
+   "check": "no farm ships more than it produces",
+   "pass": true,
+   "detail": "violations: []"
+  },
+  {
+   "check": "all depots: out = depot yield x in, within capacity",
+   "pass": true,
+   "detail": "23 depots checked"
+  },
+  {
+   "check": "all refineries: SAF out = yield x feed, within capacity",
+   "pass": true,
+   "detail": "yield 0.2"
+  },
+  {
+   "check": "PNK demand met (delivered + imported)",
+   "pass": true,
+   "detail": "demand 300 kt, delivered 300 kt, imported 0 kt"
+  },
+  {
+   "check": "PKN demand met (delivered + imported)",
+   "pass": true,
+   "detail": "demand 300 kt, delivered 300 kt, imported 0 kt"
+  },
+  {
+   "check": "BPN demand met (delivered + imported)",
+   "pass": true,
+   "detail": "demand 300 kt, delivered 300 kt, imported 0 kt"
+  },
+  {
+   "check": "TRK demand met (delivered + imported)",
+   "pass": true,
+   "detail": "demand 300 kt, delivered 300 kt, imported 0 kt"
+  },
+  {
+   "check": "all facilities on land in Kalimantan",
+   "pass": true,
+   "detail": "all on land"
+  },
+  {
+   "check": "overall mass balance: SAF = yields x biomass",
+   "pass": true,
+   "detail": "biomass 6000 kt -> SAF 1200 kt"
+  }
+ ]
+}

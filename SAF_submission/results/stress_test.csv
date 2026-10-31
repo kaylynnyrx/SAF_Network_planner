@@ -1,0 +1,15 @@
+test,what,extra_operating_cost_musd_per_yr,saf_short_kt,import_cost_musd_per_yr,total_short_kt
+refinery,R1,-25.7,{'TRK': 113.0},339.0,113.0
+refinery,R2,-42.4,{'TRK': 113.0},339.0,113.0
+refinery,R3,-8.7,{'TRK': 113.0},339.0,113.0
+refinery,R4,-8.0,{'TRK': 113.0},339.0,113.0
+refinery,R5,-31.0,{'TRK': 113.0},339.0,113.0
+refinery,R6,-23.5,{'TRK': 113.0},339.0,113.0
+district flood,Bulungan,-0.2,{},0.0,0.0
+district flood,Ketapang,-95.2,"{'PNK': 3.5, 'TRK': 236.7}",720.5,240.2
+district flood,Kotawaringin Barat,-8.1,{'TRK': 56.4},169.3,56.4
+district flood,Kotawaringin Timur,-5.4,{'TRK': 67.1},201.3,67.1
+district flood,Kutai Kartanegara,-1.8,{'TRK': 103.8},311.5,103.8
+district flood,Paser,25.4,{'TRK': 17.9},53.8,17.9
+district flood,Sanggau,-26.6,{'TRK': 106.4},319.1,106.4
+district flood,Tanah Laut,7.1,{},0.0,0.0

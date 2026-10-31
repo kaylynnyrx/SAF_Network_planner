@@ -1,0 +1,11 @@
+check,pass,detail
+solver finished,True,Optimal
+no farm ships more than it produces,True,violations: []
+"all depots: out = depot yield x in, within capacity",True,23 depots checked
+"all refineries: SAF out = yield x feed, within capacity",True,yield 0.2
+PNK demand met (delivered + imported),True,"demand 300 kt, delivered 300 kt, imported 0 kt"
+PKN demand met (delivered + imported),True,"demand 300 kt, delivered 300 kt, imported 0 kt"
+BPN demand met (delivered + imported),True,"demand 300 kt, delivered 300 kt, imported 0 kt"
+TRK demand met (delivered + imported),True,"demand 300 kt, delivered 300 kt, imported 0 kt"
+all facilities on land in Kalimantan,True,all on land
+overall mass balance: SAF = yields x biomass,True,biomass 6000 kt -> SAF 1200 kt
